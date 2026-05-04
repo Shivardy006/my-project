@@ -7,15 +7,15 @@ Conditional statements:
 Program:'''
 num = float(input("Enter a number: "))
 if num > 0:
-    print("The number is positive.")
+    print("The number is positive")
 elif num < 0:
-    print("The number is negative.")
+    print("The number is negativ")
 else:
-    print("The number is zero.")
+    print("The number is zero")
 
 '''Output:
 Enter a number: 4
-The number is positive.
+The number is positive
 '''
 
 # 2.Write a program to check whether a given number is even or odd using an if-else statement.
@@ -23,48 +23,48 @@ The number is positive.
 # Program:
 num = int(input("Enter a number: "))
 if num % 2 == 0:
-    print("The number is even.")
+    print(num,"is even")
 else:
-    print("The number is odd.")
+    print(num,"is odd")
 
 '''Output:
 Enter a number: 8
-The number is even.
+8 is even
 '''
 
 # 3.Write a program to find the largest of two numbers entered by the user.
 
 # Program:
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-if num1 > num2:
-    print("The largest number is", num1)
+a = float(input("Enter a value: "))
+b = float(input("Enter b value: "))
+if a > b:
+    print("The largest number is", a)
 else:
-    print("The largest number is", num2)
+    print("The largest number is", b)
 
 '''Output:
-Enter first number: 6
-Enter second number: 4
+Enter a value: 6
+Enter b value: 4
 The largest number is 6.0'''
 
 
 # 4.Write a program to find the largest of three numbers using if-elif-else.
 
 # Program:
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-num3 = float(input("Enter third number: "))
-if num1 >= num2 and num1 >= num3:
-    print("The largest number is", num1)
-elif num2 >= num1 and num2 >= num3:
-    print("The largest number is", num2)
+a = float(input("Enter a value: "))
+b = float(input("Enter b value: "))
+c = float(input("Enter c value: "))
+if a >= b and a >= c:
+    print("The largest number is", a)
+elif b >= a and b >= c:
+    print("The largest number is", b)
 else:
-    print("The largest number is", num3)
+    print("The largest number is", c)
 
 '''Output:
-Enter first number: 8
-Enter second number: 5
-Enter third number: 9
+Enter a value: 8
+Enter b value: 5
+Enter c value: 9
 The largest number is 9.0'''
 
 
@@ -170,7 +170,7 @@ Error: Division by zero!
  
 # Program:
 num = int(input("Enter an integer value: "))
-if 100 <= abs(num) <= 999:     # negative numbers are handled correctly
+if 100 <= abs(num) <= 999:     # abs()->negative numbers are handled correctly
     print(num,"is a three-digit number")
 else:
     print(num,"is not a three-digit number")
