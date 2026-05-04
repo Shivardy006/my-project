@@ -80,7 +80,7 @@ not a: False'''
 
 # Program:
 num = int(input("Enter a number: "))
-if num > 10 and num < 50:
+if num >= 10 and num <= 50:
     print("Number is between 10 and 50")
 else:
     print("Number is NOT between 10 and 50")
@@ -164,26 +164,26 @@ x is y: True
 # Program:
 num = int(input("Enter a number: "))
 if num % 2 == 0:
-    print("Even number")
+    print(num,"is Even number")
 else:
-    print("Odd number")
+    print(num,"is Odd number")
 
 '''Output:
 Enter a number: 6
-Even number
+6 is Even number
 '''
 
 # 9.Write a program to calculate the area of a rectangle using arithmetic operators and user input.
 
 # Program:
 length = float(input("Enter length: "))
-width = float(input("Enter width: "))
-area = length * width
+breadth = float(input("Enter breadth: "))
+area = length * breadth
 print("Area of rectangle:", area)
 
 '''Output:
 Enter length: 6
-Enter width: 4
+Enter breadth: 4
 Area of rectangle: 24.0'''
 
 
